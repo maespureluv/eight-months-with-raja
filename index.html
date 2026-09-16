@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy 8 Months, My Beloved Raja</title>
+    <meta
+      name="description"
+      content="A glowing anniversary page collection made with love."
+    />
+    <link rel="icon" type="image/png" href="assets/bouquet-logo.png?v=1" />
+    <link rel="apple-touch-icon" href="assets/bouquet-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="opening-screen" id="openingScreen" aria-label="Opening gift screen">
+      <div class="password-card" id="passwordCard">
+        <h1>Happy 8 Months Anniversary, My Beloved Blessing!</h1>
+        <form id="passwordForm">
+          <label for="passwordInput">Password</label>
+          <div class="password-row">
+            <div class="password-input-wrap">
+              <input id="passwordInput" type="password" autocomplete="off" placeholder="Enter password" />
+              <button class="password-heart-toggle" id="passwordToggle" type="button" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-9-5.6-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.4-9 12-9 12Z"/></svg></button>
+            </div>
+            <button id="unlockButton" type="submit">Unlock</button>
+          </div>
+          <p class="password-error hidden" id="passwordError">Try again, bubba.</p>
+        </form>
+      </div>
+
+      <div class="unlock-scene hidden" id="unlockScene" aria-hidden="true">
+        <div class="heart-lock">
+          <span class="lock-shine"></span>
+          <span class="keyhole"></span>
+          <span class="unlock-check">✓</span>
+        </div>
+        <div class="gold-key">
+          <span class="key-heart"></span>
+          <span class="key-stem"></span>
+          <span class="key-bit"></span>
+        </div>
+      </div>
+
+      <div class="before-note-card hidden" id="beforeNoteCard">
+        <h1>Before You Open This</h1>
+        <p>
+          Today is our 8 Months Anniversary, and before you open this gift, I want you to know how special this moment is to me. This is more than just a website filled with pages. It is a place where I put so much of my love for you-our memories, my prayers for us, my sweetest thoughts, and the little pieces of our relationship that I never want to forget.
+        </p>
+        <p>
+          I made all of this for you because you are such a beautiful blessing in my life. You are my Raja, my bubba, and the man my heart continues to choose every day. I see how much you have grown, how much effort you put into us, and how you continue learning and trying to love me better. I appreciate all of it, even the little things you may not always notice.
+        </p>
+        <p>
+          As you go through every page, I hope you can feel the love I put into each one. I hope this gift feels warm, gentle, and honest, just like the love I wanted to give you through it. Most of all, I hope it reminds you that you are deeply loved, appreciated, and always held close to my heart.
+        </p>
+        <p>
+          Happy anniversary, my love. This beautiful gift is for you, from my heart to yours.
+        </p>
+        <button id="continueToGift" type="button">Continue to Your Gift</button>
+      </div>
+
+      <div class="opening-card hidden" id="openingCard">
+        <h1>HAPPY 8 MONTHS ANNIVERSARY MY BELOVED RAJA!</h1>
+        <p>Forever grateful for us.</p>
+        <button id="openGift" type="button">Open Your Anniversary Gift</button>
+      </div>
+
+      <div class="proposal-scene hidden" id="proposalScene" aria-hidden="true">
+        <p class="proposal-question">Will You Marry Me, Randy Rajindra Toolsie?</p>
+        <p class="proposal-note note-one">I LOVE YOU, MY HUBBY!</p>
+        <p class="proposal-note note-two">This is for you.</p>
+        <div class="ring-box" aria-hidden="true">
+          <div class="box-lid"><span class="solid-face face-front"></span><span class="solid-face face-back"></span><span class="solid-face face-left"></span><span class="solid-face face-right"></span><span class="solid-face face-bottom"></span><span class="solid-face face-top"></span><span class="box-hinge"></span></div>
+          <div class="box-base"><span class="solid-face face-front"></span><span class="solid-face face-back"></span><span class="solid-face face-left"></span><span class="solid-face face-right"></span><span class="solid-face face-bottom"></span>
+            <div class="ring-holder"></div>
+          </div>
+          <div class="ring">
+            <span class="diamond"></span>
+            <span class="band"></span>
+          </div>
+          <span class="ring-sparkle sparkle-a"></span>
+          <span class="ring-sparkle sparkle-b"></span>
+          <span class="ring-sparkle sparkle-c"></span>
+        </div>
+      </div>
+      <audio id="proposalMusic" preload="auto">
+        <source src="audio/marry-me.mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+
+    <div class="heart-layer" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="sparkle-layer" aria-hidden="true"></div>
+
+    <button class="secret-heart secret-one" type="button" data-note="You found one. I love you, bubba." aria-label="Hidden heart one"></button>
+    <button class="secret-heart secret-two" type="button" data-note="Pwincess was here." aria-label="Hidden heart two"></button>
+    <button class="secret-heart secret-three" type="button" data-note="One extra kiss for my Raja." aria-label="Hidden heart three"></button>
+    <div class="secret-note hidden" id="secretNote" role="status"></div>
+
+    <main class="site-shell">
+      <header class="top-bar">
+        <h1>Happy 8 Months, My Beloved Raja</h1>
+        <p class="subtitle">Every page is a soft piece of my heart, made to glow for you.</p>
+      </header>
+
+      <section class="book" aria-label="Anniversary pages">
+        <div class="page-status">
+          <span id="pageCounter">Page 1 / 33</span>
+        </div>
+
+        <div class="stage-wrap">
+          <button class="nav-button previous" id="previousPage" type="button" aria-label="Previous page">
+            <span aria-hidden="true">&lt;</span>
+          </button>
+
+          <figure class="page-frame portrait" id="pageFrame">
+            <div class="glow-ring" aria-hidden="true"></div>
+            <img id="pageImage" src="pages/page-01.png" alt="Anniversary page 1" title="Click to look closer" />
+            <figcaption class="missing-page" id="missingPage">
+              Add <strong>pages/page-01.png</strong> here.
+            </figcaption>
+          </figure>
+
+          <button class="nav-button next" id="nextPage" type="button" aria-label="Next page">
+            <span aria-hidden="true">&gt;</span>
+          </button>
+        </div>
+
+        <div class="poem-audio hidden" id="poemAudio">
+          <p><span class="audio-heart" id="audioHeart" aria-hidden="true"></span>Listen to your Pwincess read this to you</p>
+          <audio controls preload="metadata">
+            <source src="audio/poem.mp3" type="audio/mpeg" />
+            Your browser does not support the audio player.
+          </audio>
+        </div>
+
+        <div class="controls">
+          <button id="firstPage" type="button">First</button>
+          <button id="previousPageSmall" type="button">Back</button>
+          <input
+            id="pageSlider"
+            type="range"
+            min="1"
+            max="33"
+            value="1"
+            aria-label="Choose page"
+          />
+          <button id="nextPageSmall" type="button">Next</button>
+          <button id="lastPage" type="button">Last</button>
+        </div>
+
+        <div class="zoom-controls" aria-label="Page zoom controls">
+          <button id="zoomOut" type="button">Zoom out</button>
+          <span id="zoomLevel">100%</span>
+          <button id="zoomIn" type="button">Zoom in</button>
+          <button id="resetZoom" type="button">Reset</button>
+        </div>
+
+        <section class="final-screen hidden" id="finalScreen" aria-label="Final message">
+          <div class="final-card">
+            <p>Happy eight months again, my greatest blessing in life.</p>
+            <p>I'll see you at nine.</p>
+            <p>I love you, always and forever.</p>
+            <button id="untilNine" type="button">Until Nine &lt;3</button>
+            <button id="backToPages" type="button">Back to Pages</button>
+            <div class="final-heart hidden" id="finalHeart">
+              <p>You made it to the end, but you will never reach the end of my love for you.</p>
+              <p>You own my heart, and my heart, my soul, and my mind will continue, always and forever choosing you.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <dialog class="look-closer" id="lookCloser">
+      <button class="close-view" id="closeView" type="button" aria-label="Close full screen view">Close</button>
+      <img id="largePageImage" src="pages/page-01.png" alt="Large anniversary page view" />
+    </dialog>
+
+    <script src="ring-model.js"></script>
+<script src="script.js"></script>
+  <details class="model-credit"><summary>3D model credit</summary><p><a href="https://skfb.ly/o6x99" target="_blank" rel="noopener">Engagement Ring Box</a> by Francesca Cepparulo_3D is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0</a>. Adapted for this gift: lid separation, lighting, materials, and animation.</p></details>
+</body>
+</html>
