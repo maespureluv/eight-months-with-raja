@@ -1,0 +1,3 @@
+"Engagement Ring Box" (https://skfb.ly/o6x99) by Francesca Cepparulo_3D is licensed under Creative Commons Attribution (https://creativecommons.org/licenses/by/4.0/).
+Modifications: lid mesh separation, materials, lighting and animation.
+Three.js: MIT license, included in THREE-LICENSE.txt.

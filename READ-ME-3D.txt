@@ -1,0 +1,5 @@
+Extract the ZIP and open index.html. Keep the models folder beside it. A local-preview copy is included for opening the file directly.
+For GitHub Pages, upload the contents of the website folder with index.html at the repository root.
+The closed box makes a full turn to display its lettering. The ring rises from 7.9 to 9.5 seconds, floats for four seconds, and glides left from 13.5 to 15.7 seconds. It rotates beside the messages, then faces its heart toward the camera before the final zoom. The sequence ends at 23.4 seconds.
+Editable source: ring-model-source.js. Bundled website script: ring-model.js (Three.js included).
+Creator credit is in the website and CREDITS.txt.
